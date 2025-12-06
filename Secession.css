@@ -1,0 +1,440 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden; 
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px; 
+}
+
+body {
+  margin: 0;
+  font-family: 'IBM Plex Mono', 'IBM Plex Sans JP', monospace;
+}
+
+a {
+  text-decoration: none;
+  font: "Hiragino Kaku Gothic ProN";
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  transition: all 0.5s;
+}
+
+.logo {
+    width: 200px;
+    margin-left: 80px;
+    margin-top: -35px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 50px;
+  color: black;
+  display: block;
+  float: left
+  
+}
+
+.btn-design {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;           
+  text-decoration: none; 
+  transition: all 0.3s;  
+}
+
+.btn-design:hover {
+  background-color: #e74c3c; 
+  color: #fff;              
+}
+
+.top-wrapper {
+  position: relative; 
+  height: 100vh;      
+  width: 100%;
+  overflow: hidden;   
+  display: flex;     
+  justify-content: center;
+  align-items: center;
+}
+
+.top-wrapper video {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+}
+
+.live-wrapper {
+    padding: 40px;
+    padding-bottom: 80px;
+}
+
+.live-with {
+    clear: both;
+    float: left;
+    text-align: left;
+    padding: 10px;
+    width: 100%;
+}
+
+.live-item {
+    position: relative;
+    display: block;
+    min-height: 250px;
+}
+
+.live-item .discography-jackt {
+    position: absolute;
+    top: 0;           
+    right: 0;           
+    width: 250px; 
+    margin: 0;       
+    float: none;
+}
+
+.live-item p {
+    width: calc(100% - 270px); 
+    float: left;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.live-schedule {
+    border-bottom: 1px #cccccc solid;
+    padding-bottom: 20px;
+}
+
+.btn-standard {
+    float: right;
+    padding-top: 30px;
+    text-decoration: none; 
+    color: inherit;  
+}
+
+.btn-standard:hover {
+    text-decoration: underline;
+}
+
+.discography-wrapper {
+    padding: 40px;
+    padding-bottom: 400px;
+}
+
+.discography-title {
+    transition: all 0.3s ease;
+    float: none; 
+    text-align: center; 
+    width: 100%;        
+    margin: 0;  
+    color: black;
+    padding-top: 10px;     
+}
+
+.discography-jackt {
+    width: 300px;
+    transition: all 0.3s ease;
+}
+
+
+.discography-wrapper h2 {
+    border-bottom: 1px #cccccc solid;
+    padding-bottom: 20px;
+}
+
+.discography-item {
+    float: left;
+    clear: both;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none; 
+    color: inherit;       
+}
+
+.discography-item img{
+    padding: 10px;
+    
+}
+
+.discography-item:hover .discography-jackt {
+    transform: scale(1.1); 
+}
+
+.discography-item:hover .discography-title {
+    color: #e74c3c;
+}
+
+form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.contact-wrapper{
+    padding: 40px;
+    padding-bottom: 100px;
+}
+
+.contact-wrapper h2 {
+    border-bottom: 1px #cccccc solid;
+    padding-bottom: 20px;
+}
+
+.contact-text {
+    margin-bottom: 40px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.contact-form {
+    max-width: 600px; 
+    margin: 0 auto;   
+    text-align: left; 
+}
+
+.form-item {
+    margin-bottom: 30px; 
+}
+
+.form-item label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: 'IBM Plex Mono', monospace; 
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;         
+    padding: 10px;       
+    border: none;        
+    border-bottom: 1px solid #ccc; 
+    background-color: transparent; 
+    outline: none;        
+    font-family: inherit; 
+    font-size: 1rem;
+    transition: all 0.3s; 
+    border-radius: 0;    
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-bottom: 1px solid #333; 
+    background-color: #f9f9f9;     
+}
+
+.btn-submit {
+    display: block;
+    width: 200px;
+    margin: 40px auto 0; 
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'IBM Plex Mono', monospace;
+    transition: all 0.3s;
+}
+
+
+.btn-submit:hover {
+    background-color: #e74c3c; 
+    color: white;
+}
+
+footer {
+    width: 98%;
+    background-color: #1a1a1a; 
+    color: #ffffff;          
+    padding: 60px 20px;     
+    margin-top: 100px;
+}
+
+.footer-logo {
+    width: 150px;    
+    margin-bottom: 30px; 
+    float: left;
+    filter: invert(1); 
+}
+
+.footer-contents p {
+    font-family: 'IBM Plex Mono', monospace; 
+    font-size: 0.9rem;         
+    margin: 8px 0;          
+    letter-spacing: 0.05em;  
+    color: #cccccc;        
+    white-space: pre-wrap;   
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        height: auto;      
+        padding: 5px 0;   
+        text-align: center;
+        background-color: white; 
+    }
+
+    .header-left, .header-right {
+        float: none;
+        width: 100%;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo {
+        width: 100px;        
+        margin: 5px auto 0;   
+        display: block;      
+    }
+
+    .header-right {
+        display: flex;           
+        justify-content: center; 
+        flex-wrap: wrap;        
+        align-items: center;     
+        padding-bottom: 5px;
+        margin-top: 5px;         
+    }
+
+    .header-right a {
+        float: none;         
+        display: inline-block;
+        padding: 5px 8px;      
+        font-size: 0.7rem;    
+        line-height: normal;
+        text-align: center;    
+    }
+    
+    .logo {
+        width: 100px;      
+        margin: 5px auto 0; 
+        display: block;
+    }
+
+    .header-right {
+        display: flex;         
+        justify-content: center; 
+        flex-wrap: wrap;         
+        padding-bottom: 5px;     
+    }
+
+    .header-right a {
+        float: none;
+        display: inline-block;
+        padding: 5px 10px; 
+        font-size: 0.75rem; 
+        line-height: normal;
+    }
+
+    .live-wrapper {
+        padding: 40px 20px;
+    }
+    .live-item {
+        display: flex;
+        flex-direction: column;
+    }
+    .live-item p {
+        width: 100%;
+        float: none;
+    }
+    .live-item .discography-jackt {
+        position: static;
+        width: 100%;
+        max-width: 300px;
+        margin: 20px auto 0;
+        display: block;
+    }
+
+    .discography-wrapper {
+        padding: 40px 20px;
+        padding-bottom: 120px; 
+    }
+
+    .discography-item {
+        float: none;        
+        display: flex;      
+        flex-direction: column; 
+        align-items: center;    
+        width: 100%;
+        margin: 0 auto;    
+    }
+
+    .discography-jackt {
+        margin: 0 auto 20px; 
+        width: 100%;
+        max-width: 280px;   
+        padding: 0;       
+    }
+    
+    .discography-title {
+        text-align: center;
+        padding: 0;
+    }
+
+    .contact-wrapper {
+        padding: 40px 20px;
+    }
+    .contact-form {
+        width: 100%;
+    }
+
+    footer {
+        padding: 40px 10px;
+    }
+
+    .footer-contents {
+        display: flex;
+        justify-content: center; 
+        align-items: center;     
+        gap: 20px;               
+        text-align: left;      
+    }
+
+    .footer-logo {
+        width: 80px;  
+        margin: 0;   
+        float: none; 
+    }
+
+    .footer-members p {
+        font-size: 0.7rem;
+        margin: 3px 0;
+        line-height: 1.2;
+    }
+}
+
